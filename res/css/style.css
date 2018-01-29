@@ -75,6 +75,20 @@ main.main-content {
   font-weight: 700;
 }
 
+nav {
+  margin-top: 2rem;
+}
+
+.carousel {
+  margin-top: 2rem;
+}
+
+
+.btn {
+  font-size: 1.8rem !important;
+  color: black !important;
+}
+
 footer {
   margin-top: 0.5rem;
   display: flex;
