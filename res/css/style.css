@@ -1,0 +1,113 @@
+/*Fonts*/
+/* cyrillic */
+@font-face {
+  font-family: 'Montserrat Alternates';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Montserrat Alternates Medium'), local('MontserratAlternates-Medium'), url(https://fonts.gstatic.com/s/montserratalternates/v9/YENqOGAVzwIHjYNjmKuAZmzdRttQxvr03ST-rS4eZrQU24FapfJwyacJ6xNu5rm9.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* cyrillic */
+@font-face {
+  font-family: 'Montserrat Alternates';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat Alternates Bold'), local('MontserratAlternates-Bold'), url(https://fonts.gstatic.com/s/montserratalternates/v9/YENqOGAVzwIHjYNjmKuAZnzuTdISMALn2aO8j--lsQ4U24FapfJwyacJ6xNu5rm9.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* cyrillic */
+@font-face {
+  font-family: 'Montserrat Alternates';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Montserrat Alternates Black'), local('MontserratAlternates-Black'), url(https://fonts.gstatic.com/s/montserratalternates/v9/YENqOGAVzwIHjYNjmKuAZk0xcTKGdgx_yuflZEM9sr0U24FapfJwyacJ6xNu5rm9.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+
+body {
+  font-size: 16px;
+  background-image: url("../img/background.jpg");
+  background-position: left top;
+  background-size: auto;
+  background-repeat: repeat;
+  background-attachment: scroll;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+main.main-content {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 110rem;
+  margin-top: 2rem;
+}
+
+.logo {
+  display: flex;
+  background-color: white;
+}
+
+.logo-img  {
+  width: auto;
+  height: auto;
+}
+
+.logo-img img {
+  width: 100%;
+  height: auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.header h1 {
+  font-size: 2.7rem;
+  line-height: 1.5;
+  text-align: center;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 700;
+}
+
+footer {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+footer h3 {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+footer .divide {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+footer .divide ul {
+    display: inline-flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-right: 2rem;
+}
+
+footer .divide ul li {
+    font-size: 1.1rem;
+    padding-top: 0.25rem;
+}
+
+footer .divide ul li span {
+    font-weight: bold;
+}
