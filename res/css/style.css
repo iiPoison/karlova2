@@ -79,6 +79,11 @@ nav {
   margin-top: 2rem;
 }
 
+.dropdown-menu li a:hover {
+  font-weight: bold !important;
+
+}
+
 .carousel {
   margin-top: 2rem;
   margin-bottom: 2rem;
