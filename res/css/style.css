@@ -133,6 +133,15 @@ p.text-centr {
   background-color: white;
 }
 
+.documents li a{
+  font-size: 1.7rem !important;
+
+}
+.documents li {
+  list-style: disc;
+}
+
+
 footer {
   margin-top: 0.5rem;
   display: flex;
