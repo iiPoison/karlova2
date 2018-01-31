@@ -30,10 +30,10 @@
 body {
   font-size: 16px;
   background-image: url("../img/background.jpg");
-  background-position: left top;
+  background-position:center;
   background-size: auto;
   background-repeat: repeat;
-  background-attachment: scroll;
+  background-attachment: fixed;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -49,6 +49,10 @@ main.main-content {
 
 .logo {
   display: flex;
+  background-color: white;
+}
+
+.bck-color-white {
   background-color: white;
 }
 
@@ -94,10 +98,24 @@ nav {
   color: black !important;
 }
 
+.btn-link {
+  color: black !important;
+  text-decoration: none !important;
+}
+
+
+
 .left img {
   width: 100%;
   height: auto;
 }
+
+.shadow {
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+}
+
+
 .text-centr {
   text-align: center;
 }
@@ -106,7 +124,7 @@ nav {
   color: red !important;
 }
 
-p..text-centr {
+p.text-centr {
   font-size: 1.5rem !important;
 }
 
@@ -125,7 +143,7 @@ footer {
 footer h3 {
   text-align: center;
   margin-top: 1rem;
-  font-size: 1.3rem !important;
+  font-size: 1.5rem !important;
   font-weight: bold;
 }
 
@@ -144,7 +162,7 @@ footer .divide ul {
 }
 
 footer .divide ul li {
-    font-size: 1.1rem !important;
+    font-size: 1.3rem !important;
     padding-top: 0.25rem;
 }
 
