@@ -54,6 +54,7 @@ main.main-content {
 
 .bck-color-white {
   background-color: white;
+  opacity: 0.8;
 }
 
 .logo-img  {
@@ -146,7 +147,7 @@ p.text-centr {
   list-style: disc;
   font-size: 1.8rem !important;
   font-weight: bold;
-  line-height: 1.8 !important; 
+  line-height: 1.8 !important;
 }
 
 
