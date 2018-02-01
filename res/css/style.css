@@ -135,11 +135,20 @@ p.text-centr {
 
 .documents li a{
   font-size: 1.7rem !important;
-
 }
+
 .documents li {
   list-style: disc;
+  font-size: 1.7rem !important;
 }
+
+.list {
+  list-style: disc;
+  font-size: 1.8rem !important;
+  font-weight: bold;
+  line-height: 1.8 !important; 
+}
+
 
 
 footer {
