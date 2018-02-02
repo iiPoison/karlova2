@@ -123,6 +123,8 @@ nav {
   color: red !important;
 }
 
+
+
 .text-brown {
   color: brown !important;
 }
@@ -145,6 +147,25 @@ p.text-centr {
   font-size: 1.7rem !important;
 }
 
+.documents ol li {
+  list-style:decimal;
+  margin-left: 5rem;
+  font-style: italic;
+
+}
+
+ol.documents  li {
+  list-style:decimal;
+  margin-left: 5rem;
+  font-style: italic;
+
+}
+
+
+.margin-tb-05 li {
+  margin: 0.5rem 0;
+}
+
 .list {
   list-style: disc;
   font-size: 1.8rem !important;
@@ -154,7 +175,7 @@ p.text-centr {
 
 .list2 {
   list-style: disc;
-  font-size: 1.8rem !important;  
+  font-size: 1.8rem !important;
   line-height: 1.8 !important;
 }
 
