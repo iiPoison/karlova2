@@ -138,6 +138,15 @@ p.text-centr {
   background-color: white;
 }
 
+.paragraf-margin-left {
+  margin-left: 5rem;
+}
+
+em {
+  font-style: italic;
+}
+
+
 .documents li a{
   font-size: 1.7rem !important;
 }
@@ -151,8 +160,15 @@ p.text-centr {
   list-style:decimal;
   margin-left: 5rem;
   font-style: italic;
-
 }
+
+ol.documents li {
+  list-style:decimal;
+  margin-left: 5rem;
+  font-style: italic;
+}
+
+
 
 ol.documents  li {
   list-style:decimal;
