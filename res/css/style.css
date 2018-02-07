@@ -127,10 +127,7 @@ nav {
 
 .text-grey {
   color: #666;
-
 }
-
-
 
 .text-brown {
   color: brown !important;
@@ -175,13 +172,10 @@ ol.documents li {
   font-style: italic;
 }
 
-
-
 ol.documents  li {
   list-style:decimal;
   margin-left: 5rem;
   font-style: italic;
-
 }
 
 
