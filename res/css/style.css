@@ -125,6 +125,11 @@ nav {
   color: red !important;
 }
 
+.text-grey {
+  color: #666;
+
+}
+
 
 
 .text-brown {
@@ -182,6 +187,14 @@ ol.documents  li {
 
 .margin-tb-05 li {
   margin: 0.5rem 0;
+}
+
+.margin-tb-05 {
+  margin: 0.5rem 0;
+}
+
+.margin-tb-3 {
+  margin: 3rem 0;
 }
 
 .list {
