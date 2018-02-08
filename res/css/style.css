@@ -103,7 +103,10 @@ nav {
   text-decoration: none !important;
 }
 
-
+.black-border {
+  border: 1px solid black;
+  border-radius: 4px;
+}
 
 .left img {
   width: 100%;
@@ -150,6 +153,9 @@ em {
   font-style: italic;
 }
 
+.documents {
+  font-size: 1.7rem !important;
+}
 
 .documents li a{
   font-size: 1.7rem !important;
