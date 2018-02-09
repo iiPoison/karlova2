@@ -197,6 +197,10 @@ ol.documents  li {
   margin: 3rem 0;
 }
 
+.margin-top-4 {
+  margin-top: 4rem;
+}
+
 .list {
   list-style: disc;
   font-size: 1.8rem !important;
@@ -210,6 +214,14 @@ ol.documents  li {
   line-height: 1.8 !important;
 }
 
+.main-menu {
+  margin-left: 2rem;
+
+}
+
+.submenu {
+  margin-left: 3rem;
+}
 
 
 footer {
