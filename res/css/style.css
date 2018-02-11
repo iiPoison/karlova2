@@ -242,10 +242,14 @@ ol.documents  li {
 }
 
 .left-menu {
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   font-family: 'Russo One', sans-serif;
   margin-top: 2rem;
   border-bottom: 2px solid darkgray;
+}
+
+i {
+  margin-right: 5px;
 }
 
 
