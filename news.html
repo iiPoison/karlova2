@@ -9,6 +9,12 @@
     <link rel="icon" href="./res/img/favicon.ico" type="image/x-icon">
     <link href="./res/css/bootstrap.min.css" type="text/css" rel="stylesheet">
     <link href="./res/css/font-awesome.css" type="text/css" rel="stylesheet">
+    <link href="./res/css/bvi.min.css" type="text/css" rel="stylesheet">
+
+    <style type="text/css">
+      .bvi-panel {position: absolute}
+    </style>
+
   </head>
   <body>
 
@@ -185,7 +191,7 @@
 
         <div class="col-xs-3  bck-color-white">
           <ul>
-            <li class="left-menu"> <i class="fa fa-eye fa-lg"></i>Версия для слабовидящих</li>
+            <li class="left-menu"><a href="#" class="bvi-panel-open"><i class="fa fa-eye"></i> Версия для слабовидящих</a></li>
           </ul>
 
           <ul>
@@ -238,6 +244,10 @@
     <!-- Подключает bootstrap и jQuery (jQuery должен стоять перед bootstrap) -->
     <script src="./res/js/jquery-3.3.1.min.js"></script>
     <script src="./res/js/bootstrap.min.js" ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="./res/js/responsivevoice.min.js?ver=1.5.0"></script>
+    <script src="./res/js/bvi.min.js"></script>
+    <script src="./res/js/js.cookie.js"></script>
 
   </body>
 </html>
