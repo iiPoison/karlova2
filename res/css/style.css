@@ -105,7 +105,8 @@ main.main-content {
 }
 
 nav {
-  margin-top: 2rem;
+  /*margin-top: 2rem;*/
+
 }
 
 .dropdown-menu li a:hover {
