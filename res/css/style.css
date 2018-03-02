@@ -60,7 +60,7 @@ main.main-content {
   display: flex;
   flex-direction: column;
   height: auto;
-  width: 102.5rem; /*102.5rem 125rem */
+  width: 125rem; /*102.5rem 125rem */
   margin-top: 2rem;
 }
 
@@ -142,12 +142,9 @@ nav {
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
-
 .text-centr {
   text-align: center !important;
 }
-
-
 
 .text-red {
   color: red !important;
