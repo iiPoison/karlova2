@@ -60,7 +60,7 @@ main.main-content {
   display: flex;
   flex-direction: column;
   height: auto;
-  width: 102.5rem;
+  width: 102.5rem; /*102.5rem 125rem */
   margin-top: 2rem;
 }
 
