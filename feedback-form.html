@@ -112,12 +112,26 @@
           <div class="container-fluid bck-color-white row">
             <h2 class="h2-main">Обратная свзяь</h2> <br><br>
 
+            <div class="container-fluid col-xs-8">
+              <form>
 
+                <div class="form-group">
+                  <label>Введите вашу фамилию и имя</label>
+                  <input class="form-control" id="user_name" placeholder="Иванов Иван Иванович">
+                </div>
 
+                <div class="form-group">
+                  <label>Ваш номер телефона для обратной связи</label>
+                  <input class="form-control" id="user_email" placeholder="+7 (999) 123-45-67">
+                </div>
 
+                <label>Текст сообщения:</label><br/>
+                <textarea class="form-control" rows="2" id="text_comment" placeholder="Введите ваше сообщение и нажмите кнопку Отправить"></textarea>
 
-
-
+                <br/>
+                <button type="button" value="Отправить" class="btn btn-info" id="btn_submit">Отправить</button>
+              </form>
+            </div>
 
           </div>
         </div>
@@ -150,13 +164,8 @@
             <li class="margin-tb-05 shadow"><a href="http://imc.yeisk-edu.ru"><img src="./res/img/info-met.jpg"></a></li>
             <li class="margin-tb-05 shadow"><a href="http://iro23.ru/"><img src="./res/img/inst-obt.jpg"></a></li>
           </ul>
-
-
         </div>
-
       </div>
-
-
 
       <footer class="bck-color-white shadow">
         <h3>Муниципальное бюджетное дошкольное образовательное учреждение детский сад комбинированного вида № 4 станицы Должанской</h3>
@@ -178,11 +187,16 @@
     <!-- Подключает bootstrap и jQuery (jQuery должен стоять перед bootstrap) -->
     <script src="./res/js/jquery-3.3.1.min.js"></script>
     <script src="./res/js/bootstrap.min.js" ></script>
+
+    <!-- библиотеки для иницаилизации BVI панели -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="./res/js/responsivevoice.min.js?ver=1.5.0"></script>
     <script src="./res/js/bvi.min.js"></script>
     <script src="./res/js/js.cookie.js"></script>
     <script src="./res/js/bvi-init-panel.js"></script>
+
+    <!-- для формы обратной связи -->
+    <script src="./res/js/feedback-form.js"></script>
 
   </body>
 </html>

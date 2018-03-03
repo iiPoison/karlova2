@@ -385,3 +385,8 @@ footer .divide ul li {
 footer .divide ul li span {
     font-weight: bold;
 }
+
+/* форма обратной свзяи */
+textarea {
+  height: 30rem;
+}
