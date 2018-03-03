@@ -56,12 +56,30 @@ body {
   width: 100%;
 }
 
-main.main-content {
+.main-content {
   display: flex;
   flex-direction: column;
   height: auto;
   width: 125rem;
   margin-top: 2rem;
+}
+
+.top-header {
+  width: 100%;
+  background-color: #5cb0dc;
+  height: 5rem;
+}
+
+.top-header ul {
+  display: flex;
+  align-items: center;
+  margin-top: 0.8rem;
+}
+
+.top-header ul li {
+  padding: 0 1.3rem;
+  font-size: 2rem;
+  border-right: 2px solid black;
 }
 
 .logo {
@@ -98,7 +116,7 @@ main.main-content {
 }
 
 nav {
-  display: flex;  
+  display: flex;
   flex-direction: column;
   align-items: center;
 }
