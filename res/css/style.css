@@ -118,6 +118,10 @@ nav {
   margin: 0;
 }
 
+.carousel-inner img {
+  height: auto; width: 100%;
+}
+
 .btn {
   font-size: 1.8rem !important;
   color: black !important;
