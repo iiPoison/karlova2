@@ -8,7 +8,7 @@ $(document).ready(function(){
     // отправляем данные
     $.ajax({
       url: "./res/php/action.php", // куда отправляем
-      type: "get", // метод передачи
+      type: "post", // метод передачи
       dataType: "json", // тип передачи данных
       data: { // что отправляем
         "user_name":    user_name,
