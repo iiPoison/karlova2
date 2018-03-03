@@ -98,13 +98,13 @@ main.main-content {
 }
 
 nav {
-  display: flex; /* !important */
+  display: flex;  
   flex-direction: column;
   align-items: center;
 }
 
 .dropdown-menu li a:hover {
-  font-weight: bold; /* !important */
+  font-weight: bold;
 
 }
 
@@ -123,13 +123,13 @@ nav {
 }
 
 .btn {
-  font-size: 1.8rem; /* !important */
-  color: black; /* !important */
+  font-size: 1.8rem;
+  color: black;
 }
 
 .btn-link {
-  color: black; /* !important */
-  text-decoration: none; /* !important */
+  color: black;
+  text-decoration: none;
 }
 
 .black-border {
@@ -147,11 +147,11 @@ nav {
 }
 
 .text-centr {
-  text-align: center; /* !important */
+  text-align: center;
 }
 
 .text-red {
-  color: red; /* !important */
+  color: red;
 }
 
 .text-grey {
@@ -159,15 +159,15 @@ nav {
 }
 
 .text-brown {
-  color: brown; /* !important */
+  color: brown;
 }
 
 p.text-centr {
-  font-size: 1.5rem; /* !important */
+  font-size: 1.5rem;
 }
 
 .paragraf {
-  font-size: 1.7rem; /* !important */
+  font-size: 1.7rem;
   background-color: white;
 }
 
@@ -180,16 +180,16 @@ em {
 }
 
 .documents {
-  font-size: 1.7rem; /* !important */
+  font-size: 1.7rem;
 }
 
 .documents li a{
-  font-size: 1.7rem; /* !important */
+  font-size: 1.7rem;
 }
 
 .documents li {
   list-style: disc;
-  font-size: 1.7rem; /* !important */
+  font-size: 1.7rem;
 }
 
 .documents ol li {
@@ -232,20 +232,20 @@ ol.documents  li {
 }
 
 .margin-left-2 {
-  margin-left: 2rem; /* !important */
+  margin-left: 2rem;
 }
 
 .list {
   list-style: disc;
-  font-size: 1.8rem; /* !important */
+  font-size: 1.8rem;
   font-weight: bold;
-  line-height: 1.8; /* !important */
+  line-height: 1.8;
 }
 
 .list2 {
   list-style: disc;
-  font-size: 1.8rem; /* !important */
-  line-height: 1.8; /* !important */
+  font-size: 1.8rem;
+  line-height: 1.8;
 }
 
 .main-menu {
@@ -278,7 +278,7 @@ footer {
 footer h3 {
   text-align: center;
   margin-top: 1rem;
-  font-size: 1.5rem; /* !important */ 
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
@@ -297,7 +297,7 @@ footer .divide ul {
 }
 
 footer .divide ul li {
-    font-size: 1.3rem; /* !important */
+    font-size: 1.3rem;
     padding-top: 0.25rem;
 }
 
