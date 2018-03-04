@@ -1,35 +1,48 @@
 <?php
-
-/* Задаем переменные */
-$name = htmlspecialchars($_POST["name"]);
-$tel = htmlspecialchars($_POST["tel"]);
-$message = htmlspecialchars($_POST["message"]);
-$bezspama = htmlspecialchars($_POST["bezspama"]);
-
-/* Ваш адрес и тема сообщения */
-$address = "as.fedotkin@yandex.ru";
-$sub = "Сообщение с сайта ХХХ";
-
-/* Формат письма */
-$mes = "Сообщение с сайта ХХХ.\n
-Имя отправителя: $name
-Телефон отправителя: $tels
-Текст сообщения: $message";
-
-if (empty($bezspama)) /* Оценка поля bezspama - должно быть пустым*/
-{
-/* Отправляем сообщение, используя mail() функцию */
-$from  = "From: $name \r\n Reply-To: $tel \r\n";
-if (mail($address, $sub, $mes, $from)) {
- header('Refresh: 5; URL=http://mbdou-dskv4.ru');
- echo '<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
-    <body>Письмо отправлено, через 5 секунд вы вернетесь на страницу XXX</body>';}
-else {
- header('Refresh: 5; URL=http://mbdou-dskv4.ru');
- echo '<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
-    <body>Письмо не отправлено, через 5 секунд вы вернетесь на страницу YYY</body>';}
-}
-exit; /* Выход без сообщения, если поле bezspama заполнено спам ботами */
+    $msg_box = ""; // в этой переменной будем хранить сообщения формы
+    $errors = array(); // контейнер для ошибок
+    // проверяем корректность полей
+    if($_POST['user_name'] == "")    $errors[] = "Поле 'Ваше имя' не заполнено!";
+    if($_POST['user_email'] == "")   $errors[] = "Поле 'Ваш e-mail' не заполнено!";
+    if($_POST['text_comment'] == "") $errors[] = "Поле 'Текст сообщения' не заполнено!";
+ 
+    // если форма без ошибок
+    if(empty($errors)){    
+        // собираем данные из формы
+        $message  = "Имя пользователя: " . $_POST['user_name'] . "<br/>";
+        $message .= "E-mail пользователя: " . $_POST['user_email'] . "<br/>";
+        $message .= "Текст письма: " . $_POST['text_comment'];     
+        send_mail($message); // отправим письмо
+        // выведем сообщение об успехе
+        $msg_box = "<span style='color: green;'>Сообщение успешно отправлено!</span>";
+    }else{
+        // если были ошибки, то выводим их
+        $msg_box = "";
+        foreach($errors as $one_error){
+            $msg_box .= "<span style='color: red;'>$one_error</span><br/>";
+        }
+    }
+ 
+    // делаем ответ на клиентскую часть в формате JSON
+    echo json_encode(array(
+        'result' => $msg_box
+    ));
+     
+     
+    // функция отправки письма
+    function send_mail($message){
+        // почта, на которую придет письмо
+        $mail_to = "as.fedotkin@yandex.ru";
+        // тема письма
+        $subject = "Письмо с обратной связи";
+         
+        // заголовок письма
+        $headers= "MIME-Version: 1.0\r\n";
+        $headers .= "Content-type: text/html; charset=utf-8\r\n"; // кодировка письма
+        $headers .= "From: Тестовое письмо <no-reply@test.com>\r\n"; // от кого письмо
+         
+        // отправляем письмо
+        mail($mail_to, $subject, $message, $headers);
+    }
+     
 ?>

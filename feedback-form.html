@@ -114,23 +114,19 @@
 
             <!-- Форма обратной связи -->
             <div class="container-fluid col-xs-8">
-              <form class="contact_form" action="action.php" method="post">
+              <form>
 
-                <div class="form-group">
-                  <label for="name">Введите вашу фамилию и имя</label>
-                  <input name="name" type="text" class="form-control" id="user_name" placeholder="Иванов Иван Иванович">
-                </div>
+                <label>Введите вашу фамилию и имя</label>
+                <input type="text" class="form-control" id="user_name" placeholder="Иванов Иван Иванович"><br>
 
-                <div class="form-group">
-                  <label for="tel">Ваш номер телефона для обратной связи</label>
-                  <input name="tel" type="tel" class="form-control" id="user_email" placeholder="+7 (999) 123-45-67">
-                </div>
+                <label>Ваш номер телефона для обратной связи</label>
+                <input type="tel" class="form-control" id="user_email" placeholder="+7 (999) 123-45-67"><br>
 
-                <label for="message">Текст сообщения:</label><br/>
-                <textarea name="message" class="form-control" cols="30" rows="3" id="text_comment" placeholder="Введите ваше сообщение и нажмите кнопку Отправить"></textarea>
-                 <input name="bezspama" type="text" style="display:none" value="" />
-                <br/>
-                <button class="submit" type="button" value="Отправить" class="btn btn-info" id="btn_submit">Отправить</button>
+                <label>Текст сообщения:</label><br/>
+                <textarea class="form-control" cols="30" rows="3" id="text_comment" placeholder="Введите ваше сообщение и нажмите кнопку Отправить"></textarea><br>
+
+                <input type="button" value="Отправить" id="btn_submit" />
+
               </form>
             </div>
 
