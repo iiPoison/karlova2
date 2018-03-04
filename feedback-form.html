@@ -76,7 +76,7 @@
             </ul>
           </div>
           <div class="btn-group btn-group-lg " role="group">
-            <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Педагоги<span class="caret"></span></a>
+            <a class="btn btn-info dropdown-toggle" data-toggle="dropdown">Педагоги<span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><a href="certification-of-teachers.html">Аттестация пелагогических кадров</a></li>
               <li><a href="blogs-of-pedagogs.html">Ссылки на сайты и блоги пегагогов</a></li>
@@ -112,24 +112,25 @@
           <div class="container-fluid bck-color-white row">
             <h2 class="h2-main">Обратная свзяь</h2> <br><br>
 
+            <!-- Форма обратной связи -->
             <div class="container-fluid col-xs-8">
               <form class="contact_form" action="./res/php/action.php" method="post">
 
                 <div class="form-group">
-                  <label>Введите вашу фамилию и имя</label>
-                  <input class="form-control" id="user_name" placeholder="Иванов Иван Иванович">
+                  <label for="name">Введите вашу фамилию и имя</label>
+                  <input name="name" type="text" class="form-control" id="user_name" placeholder="Иванов Иван Иванович">
                 </div>
 
                 <div class="form-group">
-                  <label>Ваш номер телефона для обратной связи</label>
-                  <input class="form-control" id="user_email" placeholder="+7 (999) 123-45-67">
+                  <label for="tel">Ваш номер телефона для обратной связи</label>
+                  <input name="tel" type="tel" class="form-control" id="user_email" placeholder="+7 (999) 123-45-67">
                 </div>
 
-                <label>Текст сообщения:</label><br/>
-                <textarea class="form-control" rows="2" id="text_comment" placeholder="Введите ваше сообщение и нажмите кнопку Отправить"></textarea>
-
+                <label for="message">Текст сообщения:</label><br/>
+                <textarea name="message" class="form-control" cols="30" rows="3" id="text_comment" placeholder="Введите ваше сообщение и нажмите кнопку Отправить"></textarea>
+                 <input name="bezspama" type="text" style="display:none" value="" />
                 <br/>
-                <button type="button" value="Отправить" class="btn btn-info" id="btn_submit">Отправить</button>
+                <button class="submit" type="button" value="Отправить" class="btn btn-info" id="btn_submit">Отправить</button>
               </form>
             </div>
 
