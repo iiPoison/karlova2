@@ -87,7 +87,7 @@
 body {
   font-size: 16px;
   /*background-image: url("../img/background-2.jpg");*/
-  background-color: #6B6B6B; /* времено*/
+  background-color: LightGrey; /* времено*/
   background-position:center;
   background-size: auto;
   background-repeat: repeat;
