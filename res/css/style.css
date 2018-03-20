@@ -94,7 +94,13 @@ body {
   background-attachment: fixed;
   display: flex;
   justify-content: center;
-  width: 100%;  
+  width: 100%;
+}
+
+.img {
+  height: 500px;
+  overflow: hidden;
+
 }
 
 .main-content {
