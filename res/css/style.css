@@ -252,6 +252,7 @@ p.text-centr {
 .paragraf {
   font-size: 1.7rem;
   background-color: white;
+  text-indent: 20px;
 }
 
 .paragraf-margin-left, .li-margin-left {
