@@ -397,3 +397,20 @@ footer .divide ul li span {
 textarea {
   height: 30rem;
 }
+
+.btn-group-justified {
+  
+  width:auto;
+ 
+}
+.btn-group-lg>.btn, .btn-lg {
+  padding: 10px 12px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+}
+.dropdown-menu>li>a {
+  white-space: normal !important ;
+  width: 550px !important ;
+ 
+}
